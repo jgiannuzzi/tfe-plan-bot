@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/codeclysm/extract"
-	"github.com/google/go-github/v53/github"
+	"github.com/google/go-github/v60/github"
 	"github.com/pkg/errors"
 	"github.com/shurcooL/githubv4"
 
@@ -110,7 +110,7 @@ func (ghc *GitHubContext) DownloadCode() (string, func(), error) {
 		&github.RepositoryContentGetOptions{
 			Ref: ghc.Context.HeadSHA(),
 		},
-		true,
+		10,
 	)
 	if err != nil {
 		return "", func() {}, errors.Wrap(err, "failed to get code archive link")

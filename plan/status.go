@@ -18,7 +18,7 @@ import (
 	"context"
 
 	"github.com/G-Research/tfe-plan-bot/pull"
-	"github.com/google/go-github/v53/github"
+	"github.com/google/go-github/v60/github"
 )
 
 type StatusPoster interface {

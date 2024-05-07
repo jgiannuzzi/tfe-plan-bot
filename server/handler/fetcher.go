@@ -21,7 +21,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/google/go-github/v53/github"
+	"github.com/google/go-github/v60/github"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	"gopkg.in/yaml.v2"
